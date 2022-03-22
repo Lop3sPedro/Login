@@ -34,7 +34,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: blue; */
 }
 
 .form-container {
@@ -56,7 +55,6 @@ body {
 
 .form-container form {
   height: 100vh;
-  /* background-color: aqua; */
   display: flex;
   flex-direction: column;
   width: 60%;
