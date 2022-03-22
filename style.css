@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #171923cc;
+  --input: #cbd5e0;
+  --placeholder: #b2f5ea;
+  --button: #285e61;
+  --white: #fff;
+  --text-button: #b2f5ea;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: var(--background);
+}
+
+.splash {
+  flex: 1;
+  background-image: url("/img/unsplash_wJoB8D3hnzc.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: blue; */
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.form-container h1 {
+  display: flex;
+  padding-bottom: 100px;
+  font-size: 64px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+
+.form-container form {
+  height: 100vh;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: center;
+}
+
+.form-container input {
+  background-color: var(--input);
+  display: flex;
+  width: 100%;
+  height: 10%;
+  border-radius: 12px;
+}
+
+.form-container input#email {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.form-container input::placeholder {
+  color: var(--placeholder);
+  padding: 32px 16px;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.form-container button {
+  background-color: var(--button);
+  margin-top: 64px;
+  padding: 32px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 32px;
+  opacity: 0.6;
+  transition: 0.9s;
+  color: var(--text-button);
+}
+
+.form-container button:hover {
+  opacity: 1;
+}
+
+.form-container a {
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-self: center;
+  margin-top: 90px;
+  font-weight: 100;
+  color: var(--white);
+  opacity: 0.68;
+  transition: 0.2s;
+}
+
+.form-container a:hover {
+  opacity: 1;
+}
